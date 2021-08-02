@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestApiDDD.Aplicacao\RestApiDDD.Aplicacao.csproj" />
+    <ProjectReference Include="..\RestApiDDD.Dominio.Core\RestApiDDD.Dominio.Core.csproj" />
+    <ProjectReference Include="..\RestApiDDD.Dominio.Servico\RestApiDDD.Dominio.Servico.csproj" />
+    <ProjectReference Include="..\RestApiDDD.Dominio\RestApiDDD.Dominio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CrossCutting\" />
+  </ItemGroup>
+
+</Project>
